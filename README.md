@@ -14,6 +14,14 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
+## SEO
+
+SEO practise has also been done to the app in the index.html file in <head> section.
+
+## Lighthouse testing
+
+Due to stackblitz does not allow lighthouse test on tab while the another main parent tab opened therefore I have submitted test of same project on localhost. Here is the PDF file on root directory: [spacex_light_house_test_localhost.pdf]
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
