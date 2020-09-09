@@ -1,0 +1,55 @@
+<div class="container text-center">
+  <h1>SpaceX Launch Programs</h1>
+  <p> <button (click)="getDataFromAPI()">Click to Display</button></p>
+  
+  <div class="row">
+    <div class="col-sm-2" style="background-color:#fff; margin: 10px; min-height: 1805px"><h3>Filters</h3>
+	<h4>Launch year</h4>
+	
+	<div class="btn-group">
+  <button type="button" class="btn btn-success">2006</button>
+  <button type="button" class="btn btn-success">2007</button>
+	<button type="button" class="btn btn-success">2008</button>
+	<button type="button" class="btn btn-success">2009</button>
+	<button type="button" class="btn btn-success">2010</button>
+	<button type="button" class="btn btn-success">2011</button>
+	<button type="button" class="btn btn-success">2012</button>
+	<button type="button" class="btn btn-success">2013</button>
+	<button type="button" class="btn btn-success">2014</button>
+	<button type="button" class="btn btn-success">2015</button>
+	<button type="button" class="btn btn-success">2016</button>
+	<button type="button" class="btn btn-success">2017</button>
+	<button type="button" class="btn btn-success">2018</button>
+	<button type="button" class="btn btn-success">2019</button>
+	<button type="button" class="btn btn-success">2020</button>
+  </div>
+  <h4>Success launch</h4>
+	
+	<div class="btn-group">
+    <button type="button" class="btn btn-success">True</button>
+    <button type="button" class="btn btn-success">False</button>
+  </div>
+	<h4>Success landing</h4>
+	
+	<div class="btn-group">
+    <button type="button" class="btn btn-success">True</button>
+    <button type="button" class="btn btn-success">False</button>
+  </div>
+	
+	</div>
+    <div class="col-sm-2" style="background-color:#fff; margin: 10px;" *ngFor="let d of data">
+      <div class="card">
+        <img class="card-img-top" src="{{d.links.mission_patch}}" width="150px" alt="Card image cap">
+        <div class="card-body">
+        <h5 class="card-title" style="color:rgba(18, 73, 252, 0.678); font-weight: bold;">{{d.mission_name}} #{{d.flight_number }}</h5>
+        <p class="card-text"><strong>Mission ids:</strong> 
+          <li>{{d.mission_id}} list mission ids</li>
+        </p>
+        <p class="card-text"><strong>Launch year: </strong> {{d.launch_year}}</p>
+        <p class="card-text"><strong>Successful Launch:</strong> {{d.launch_success}}</p>
+        <p class="card-text"><strong>Launch landing:</strong> {{d.launch_landing}}</p>
+      </div>
+    </div>
+  </div>
+  </div>  
+  </div>

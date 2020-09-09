@@ -1,0 +1,9 @@
+.container{ background-color: #ccc;}
+div.col.span{background-color: #999;}
+.card-img-top {background-color: #ccc;}
+.col-xs-2{
+    background:#00f;
+    color:#FFF;
+}
+.card {margin-top:20px;}
+
